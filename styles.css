@@ -1,0 +1,378 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+p {
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.text--primary {
+  font-size: 1.4rem;
+  font-weight: 200;
+  max-width: 40.5rem;
+  word-spacing: 2px;
+  line-height: 2.2rem;
+}
+
+.text--tertiary {
+  font-size: 1.15rem;
+  line-height: 1.6rem;
+  max-width: 50rem;
+  margin-bottom: 1.4rem;
+}
+
+.heading--primary {
+  font-size: 2.714rem;
+  line-height: 4rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 2rem;
+}
+
+.heading--secondary {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+
+.heading--tertiary {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.7rem;
+}
+
+.quin {
+  font-size: 0.85rem;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+/* ****************************************
+Grid System___ 
+***/
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.gap {
+  row-gap: 4rem;
+}
+
+.grid_2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__footer {
+  grid-template-columns: 1fr 0.5fr repeat(2, 0.4fr) 0.5fr;
+  gap: 4rem;
+}
+
+/* ****************************************
+................ Header ...................
+***/
+
+.header {
+  background-color: hsl(217, 28%, 15%);
+  max-width: 1440px;
+  padding: 5rem 6rem 2rem;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5rem;
+}
+
+._item-link {
+  color: hsl(0, 0%, 100%);
+}
+
+/* ****************************************
+................ Hero ...................
+***/
+.hero {
+  background-color: hsl(217, 28%, 15%);
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.hero_img--box {
+  margin-bottom: 3rem;
+}
+
+.hero_text--box {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_text--box h2 {
+  max-width: 50rem;
+}
+
+/* ****************************************
+................ Features ...................
+***/
+.features {
+  background-color: hsl(218, 28%, 13%);
+  max-width: 1440px;
+  padding: 7rem 9rem;
+}
+
+.feature-icon {
+  margin-bottom: 1rem;
+}
+
+.feature-box .desc {
+  font-size: 15px;
+  line-height: 1.6rem;
+  max-width: 25rem;
+  display: inline-block;
+}
+
+/* ****************************************
+................ Mandate ...................
+***/
+.mandate {
+  background-color: hsl(218, 28%, 13%);
+  padding: 5rem 6rem;
+  max-width: 1440px;
+}
+
+.mandate-img img {
+  width: 95%;
+}
+
+.mandate h2 {
+  max-width: 30rem;
+}
+
+.mandate .desc {
+  font-size: 1.2rem;
+  max-width: 40rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+/* ****************************************
+................ Testimonials ..............
+***/
+.testimonials {
+  background-color: hsl(218, 28%, 13%);
+  max-width: 1440px;
+  padding: 5rem 7rem 10rem;
+}
+
+.blockquote {
+  position: relative;
+  top: 12px;
+  left: -8px;
+}
+
+.testimony {
+  background-color: hsl(219, 30%, 18%);
+  padding: 3.5rem 2rem 2rem;
+  border-radius: 0.4rem;
+  z-index: 999;
+}
+
+.testifier {
+  display: flex;
+  gap: 6px;
+}
+
+.__testifier {
+  max-width: 30%;
+  width: 2.3rem;
+  border-radius: 50%;
+}
+
+.organisation {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 200;
+}
+
+/* ****************************************
+................ Cta ...................
+***/
+.cta {
+  background-color: hsl(218, 28%, 13%);
+  padding: 5rem 6rem 0;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+
+.sign-up_card {
+  width: fit-content;
+  background-color: hsl(217, 28%, 15%);
+  height: 23rem;
+  padding: 4rem 6rem;
+  border-radius: 0.3rem;
+}
+
+.__cta-search {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* ****************************************
+................ Footer ...................
+***/
+.footer {
+  background-color: hsl(216, 53%, 9%);
+  max-width: 1440px;
+  padding: 20rem 6rem 7rem;
+  z-index: -2;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.gps {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.tracker-icon {
+  width: 3.2rem;
+  height: 1.3rem;
+}
+
+.gps .desc {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.mail,
+.nav-cols_list {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.__mail {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-cols_list {
+  list-style: none;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* ****************************************
+Buttons___ 
+***/
+.btn {
+  width: 18rem;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+}
+
+.btn_primary {
+  color: white;
+  background: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+  border-radius: 2rem;
+}
+
+.ghost {
+  font-size: 1.2rem;
+  color: hsl(176, 68%, 64%);
+  padding-bottom: 5px;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+
+.input {
+  width: 35rem;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+/* ****************************************
+Utility___ 
+***/
+
+.center {
+  text-align: center;
+}
+
+.left-sm {
+  position: relative;
+  left: 4rem;
+}
+
+.left-md {
+  position: relative;
+  left: 15rem;
+}
+
+.md-xs {
+  margin-bottom: 1rem;
+}
+
+.md-av {
+  margin-bottom: 2rem;
+}
+
+.md-sm {
+  margin-bottom: 3rem;
+}
+
+.mt {
+  margin-top: 5.5rem;
+}
+
+.al-items {
+  align-items: center;
+}
+
+.al-left {
+  text-align: left;
+}
